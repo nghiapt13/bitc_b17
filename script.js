@@ -39,11 +39,11 @@ alert("Bài 3");
 var b3 = prompt("Mời nhập")
     if(b3.length>=3){
         if(b3.slice(-3)=="ing"){
-            document.write(b3+"ly");
+            alert(b3+"ly");
         }
         else{
-            document.write(b3+"ing");
+            alert(b3+"ing");
         }
     }else{
-        document.write(b3);
+        alert(b3);
     }
