@@ -36,13 +36,14 @@ alert(text2);
 // Bài 3
 
 alert("Bài 3");
-var text3 = prompt("Mời nhập");
-var ing = "ing";
-var ly = "ly";
-if (text3.length >= 3) {
-    text3 = text3.concat(ing);
-    if (text3.includes("ing")) {
-        text3 = text3.concat(ly);
+var b3 = prompt("Mời nhập")
+    if(b3.length>=3){
+        if(b3.slice(-3)=="ing"){
+            document.write(b3+"ly");
+        }
+        else{
+            document.write(b3+"ing");
+        }
+    }else{
+        document.write(b3);
     }
-}
-alert(text3);
